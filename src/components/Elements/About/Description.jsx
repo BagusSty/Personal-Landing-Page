@@ -3,7 +3,7 @@ const Description = () => {
   const text =
     "Halo! Saya adalah seorang web developer yang bersemangat dalam menciptakan aplikasi web yang responsif dan menarik. Berusia 22 tahun dan lulusan dari D3 Teknologi Informasi Politeknik Negeri Madiun, saya selalu bersemangat untuk mengeksplorasi inovasi dalam dunia pemrograman. Saya memulai menekuni web developer semenjak lulus SMA hingga kini.".split(" ");
   return (
-    <div className="text">
+    <div className="text sm:text-left text-justify">
       {text.map((el, i) => (
         <motion.span
           className=""

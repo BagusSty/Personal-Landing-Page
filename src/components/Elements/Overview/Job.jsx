@@ -6,7 +6,7 @@ const Job = () => {
     <motion.div className="text">
       {text.split("").map((letter, index) => (
         <motion.span
-          className="text-2xl"
+          className="sm:text-2xl text-lg"
           key={index}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

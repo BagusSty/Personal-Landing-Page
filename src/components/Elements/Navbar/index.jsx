@@ -42,17 +42,17 @@ const Navbar = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="flex justify-between items-center bg-transparent backdrop-blur w-screen px-24 py-8 gap-12 fixed"
+      className="flex justify-between items-center bg-transparent sm:backdrop-blur w-screen sm:px-24 sm:py-8 p-8 gap-12 fixed"
     >
       <h1
-        className={`text-4xl font-bold font-the-nautigal ${
+        className={`sm:flex hidden text-4xl font-bold font-the-nautigal ${
           darkMode && "text-light-gray"
         }`}
       >
         {" "}
         Bagus Setyo Nurcahyo{" "}
       </h1>
-      <div>
+      <div className="sm:flex hidden">
         {listmenus.map((menu) => (
           <Link
             activeClass="active"

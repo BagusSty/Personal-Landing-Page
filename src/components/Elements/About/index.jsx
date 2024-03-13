@@ -89,7 +89,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full h-screen flex justify-center items-center px-24 py-8 gap-8"
+      className="w-full h-screen flex sm:flex-row flex-col justify-center items-center sm:px-24 sm:py-8 gap-8"
     >
       <motion.div
         initial={{ y: -40, opacity: 0 }}
@@ -105,7 +105,7 @@ const About = () => {
           },
         }}
         viewport={{ once: true }}
-        className="w-1/2 h-full flex flex-col justify-center items-start space-y-8 p-4"
+        className="sm:w-1/2 h-full flex flex-col justify-center sm:items-start items-center space-y-8 p-4"
       >
         <div>
           <h1 className="text-lg font-bold">About Me</h1>
@@ -153,7 +153,7 @@ const About = () => {
             <stop stopColor="#ff1493" offset="100%" />
           </linearGradient>
         </svg>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-4 grid-cols-2 sm:gap-8 gap-12">
           {experts.map((expert, index) => (
             <Expert key={index} icon={expert.icon} text={expert.text} />
           ))}

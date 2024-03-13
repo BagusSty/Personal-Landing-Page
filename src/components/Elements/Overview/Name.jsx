@@ -23,7 +23,7 @@ const Name = () => {
     <div>
       {text.map((el, i) => (
         <motion.span
-          className={`text-8xl font-bold ${
+          className={`sm:text-8xl text-6xl font-bold ${
             darkMode
               ? "bg-gradient-to-r from-yellow-500 to-pink-500 text-transparent bg-clip-text"
               : ""

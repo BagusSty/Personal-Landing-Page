@@ -59,10 +59,10 @@ const Contact = () => {
       }}
       viewport={{ once: true }}
       id="contact"
-      className="w-full h-screen flex flex-col justify-center items-center px-24 py-8 gap-8"
+      className="w-full sm:h-screen flex flex-col justify-center items-center px-24 py-8 gap-8"
     >
       <div className="space-y-2">
-        <h1 className="text-4xl font-bold">Kontak Saya</h1>
+        <h1 className="sm:text-4xl text-2xl font-bold">Kontak Saya</h1>
         <hr
           className={`w-full border-2 ${
             (darkMode && "border-gradient") || "border-black"

@@ -33,7 +33,7 @@ const Projects = () => {
         },
       }}
       viewport={{ once: true }}
-      className="w-screen h-screen flex flex-col justify-center items-center p-24 gap-4"
+      className="w-screen h-screen flex flex-col justify-center items-center sm:p-24 sm:my-0 my-8 gap-4"
       id="projects"
     >
       <div className="space-y-2">
